@@ -1,0 +1,35 @@
+package atividade.java1;
+import java.util.Scanner;
+
+public class atividade {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		//cinco valores inteiros, a média e o maior informado
+		
+		int i = 0;
+		int valor = 0;
+		double soma = 0;
+		double media = 0;
+		int maiorValor = 0;
+		
+		for(i = 1 ; i <= 5 ; i++ ) {
+			System.out.println("Informe o valor " + i);
+			valor = s.nextInt();
+			soma = soma + valor;
+			
+			if(valor > maiorValor) 
+				maiorValor = valor;
+			
+		}
+		
+		media = (soma) / 5;
+		System.out.println("A média é: " + media);
+		
+			System.out.println("O maior valor é: " + maiorValor);	
+				
+		
+	}
+
+}
