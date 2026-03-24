@@ -6,13 +6,11 @@ public class atividade {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		
-		//cinco valores inteiros, a média e o maior informado
-		
 		int i = 0;
 		int valor = 0;
 		double soma = 0;
 		double media = 0;
-		int maiorValor = 0;
+		int maiorValor = Integer.MIN_VALUE;
 		
 		for(i = 1 ; i <= 5 ; i++ ) {
 			System.out.println("Informe o valor " + i);
